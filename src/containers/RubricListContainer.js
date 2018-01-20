@@ -1,7 +1,7 @@
 import React from 'react'
 import { Table } from 'semantic-ui-react'
 
-const VacancyList = ({ rubric }) => {
+const RubricList = ({ rubric }) => {
   return (
     <div>
       <Table celled>
@@ -12,16 +12,16 @@ const VacancyList = ({ rubric }) => {
           </Table.Row>
         </Table.Header>
         <Table.Body>
-          {rubric.map(item =>
+          {rubric.map(item => item.map(item =>
             <Table.Row key={item.id}>
               <Table.Cell>{item.title}</Table.Cell>
               <Table.Cell>{item.count}</Table.Cell>
             </Table.Row>
-          )}
+          ))}
         </Table.Body>
       </Table>
     </div>
   )
 }
 
-export default VacancyList
+export default RubricList

@@ -1,18 +1,12 @@
-import React, { Component } from 'react'
+import React from 'react'
 
 import MainPage from '../routers/HomePageRouter'
-import LinksPage from '../base/HomePage'
+import Header from '../base/Header'
 
-class HomePage extends Component{
-  render(){
-    return(
-      <div>
-          <LinksPage />
-            <hr/>
-          <MainPage />
-      </div>
-    )
-  }
-}
+export default () =>
+  <div>
+    <Header />
+    <hr />
+    <MainPage />
+  </div>
 
-export default HomePage

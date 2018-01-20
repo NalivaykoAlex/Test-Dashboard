@@ -4,6 +4,7 @@ const model = {
     geo_id: 826,
     highlight: true,
     period: 'today',
+    limit:100,
     search_type: 'fullThrottle'
   }
 

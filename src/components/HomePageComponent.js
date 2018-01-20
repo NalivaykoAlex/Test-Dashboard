@@ -7,11 +7,10 @@ const images = {
 }
 
 class Home extends Component {
-
   render() {
     return (
       <div>
-        <Image src='../static/images/barbrady.jpg' style={images}/>        
+        <Image src='./static/images/barbrady.jpg' style={images} />
       </div>
     )
   }
